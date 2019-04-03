@@ -1,11 +1,11 @@
 
 Array.prototype.even = function list() {  
-    this.filter(element => element%2 == 0 ).forEach(element => console.log("element " + element))
+    console.log ( this.filter(element => element%2 == 0 ));
 
 }
 
 Array.prototype.odd = function list() {  
-    this.filter(element => element%2 != 0 ).forEach(element => console.log("element " + element))
+    console.log ( this.filter(element => element%2 != 0 ) );
 
 }
 console.log("start");
