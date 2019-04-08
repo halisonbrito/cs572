@@ -1,0 +1,38 @@
+
+
+http://localhost:122/api/v1/grades
+
+
+###
+
+http://localhost:122/api/v1/grades/2
+
+
+###
+
+POST http://localhost:122/api/v1/grades HTTP/1.1
+content-type: application/json
+
+ {
+    "id": 3,
+    "name": "33",
+    "course": "MWA",
+    "grade": 1000
+  }
+
+
+###
+
+DELETE http://localhost:122/api/v1/grades/1 HTTP/1.1
+
+
+###
+
+PUT  http://localhost:122/api/v1/grades/1 HTTP/1.1
+content-type: application/json
+
+ {
+    "name": "Harry",
+    "course": "WAA",
+    "grade": 88
+  }
