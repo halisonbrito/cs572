@@ -1,0 +1,40 @@
+
+
+http://localhost:122/api/v1/lectures
+
+
+###
+
+http://localhost:122/api/v1/lectures/5cabb91f4eabe2bc3fe360eb
+
+###
+
+http://localhost:122/api/v1/lectures/search/X
+
+
+###
+
+POST http://localhost:122/api/v1/lectures HTTP/1.1
+content-type: application/json
+
+ {
+    "course": "WAA",
+    "lecture": "TTT"
+  }
+
+
+###
+
+DELETE http://localhost:122/api/v1/lectures/5cac10334eabe2bc3fe360ef HTTP/1.1
+
+
+###
+
+PUT  http://localhost:122/api/v1/lectures/5cabbfaf4eabe2bc3fe360ec HTTP/1.1
+content-type: application/json
+
+  {
+    "name": "Novo",
+    "age": "32221",
+    "occupation": "op"
+  }
