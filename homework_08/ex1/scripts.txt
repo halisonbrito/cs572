@@ -1,0 +1,49 @@
+1- db.col.find({})
+
+2- db.col.find({},{restaurant_id:1,name:1,district:1,cuisine:1})
+
+3- db.col.find({},{_id:0,restaurant_id:1,name:1,district:1,cuisine:1})
+
+4- db.col.find({},{_id:0,restaurant_id:1,name:1,district:1,cuisine:1,'address.zipcode':1})
+
+5- db.col.find({district:'Bronx'}).pretty
+
+6- db.col.find({district:'Bronx'}).limit(5)
+
+7- db.col.find({district:'Bronx'}).skip(5)
+
+8- db.col.find({'address.coord': {$lt:-95.754168} })
+
+9- db.col.find( { cuisine:'American ', 'grades.score': {$gt:70} , 'address.coord':{$lt:-65.754168} } )
+
+10 - db.col.find( {name:{$regex:/^Will/} }, {_id:0,restaurant_id:1,name:1,district:1,cuisine:1} )
+
+11-  db.col.find( {name:{$regex:/ces$/} }, {_id:0,restaurant_id:1,name:1,district:1,cuisine:1} )
+
+12 -  db.col.find( {name:{$regex:/Reg/} }, {_id:0,restaurant_id:1,name:1,district:1,cuisine:1} )
+
+13 -  db.col.find( {$or:[{cuisine:'American '}  , {cuisine:'Chinese'}  ], district:'Bronx' }   )
+
+14 - db.col.find( {$or:[{district:'Brooklyn'}, {district:'Bronx'}, {district:'Queens'}, {district:'Staten Island'}  ] }   )
+
+15 - db.col.find( {$and:[{district:{$ne:'Brooklyn'} }, {district: {$ne:'Bronx'}}, {district:{$ne:'Queens'}}, {district: {$ne:'Staten Island'}}  ] }   )
+
+16 -  db.col.find( {'grades.score':{$not:{$gt:10} } })
+
+17 -  db.col.find( {'address.coord.1':{$gt:42}, 'address.coord.1':{$lte:52} } , {_id:0,restaurant_id:1,name:1,address:1})
+
+18 - db.col.find({}).sort({name:1})
+
+19 - db.col.find({}).sort({name:-1})
+
+20 - db.col.find({}).sort({cuisine:1,district:-1})
+
+21 - db.col.find( {'address.street':{$exists:false}})
+
+22 - db.col.find( {'address.coord':{$type:'double'}})
+
+23 - db.col.find({ name:/^Mad/ }, {_id:0,cuisine:1,district:1,'address.coord':1,name:1})
+
+
+
+

@@ -1,0 +1,39 @@
+{
+    "borrows": [{
+        "dateBorrow":"03/22/2019","dueDate":"04/09/2019","librarian":{"name":"Mary"},
+        "student":{"name":"John","studentid":"111","address":"Avenue X, 122","phone":"211-922"},
+        "books":[{"ISBN":"Game of Thrones","author":"George R. R. Martin","keywords":["adventure,fantasy"]}]
+    },
+    {
+        "dateBorrow":"03/27/2019","dueDate":"04/12/2019","librarian":{"name":"Mary"},
+        "student":{"name":"Charles","studentid":"111","address":"Avenue Y, 10","phone":"222-222"},
+        "books":[{"ISBN":"Becoming Michelle Obama","author":"Michelle Obama","keywords":["former first lady,story"]},
+                 {"ISBN":"The Hate U Give","author":"Angie","keywords":["adventure"]} ]
+    }]
+
+
+    {
+        "books":[
+        {"ISBN":"Becoming Michelle Obama","author":"Michelle Obama","keywords":["former first lady,story"]},
+        {"ISBN":"The Hate U Give","author":"Angie","keywords":["adventure"]},
+        {"ISBN":"Game of Thrones","author":"George R. R. Martin","keywords":["adventure,fantasy"]}
+        ]
+    
+    }
+
+    {
+        "students":[
+            {"name":"Charles","studentid":"111","address":"Avenue Y, 10","phone":"222-222"},
+            {"name":"John","studentid":"111","address":"Avenue X, 122","phone":"211-922"}
+        ]
+    
+    }
+}
+
+
+
+
+// createIndex({studentid:1},{background:true})  - collection students
+// createIndex({ISBN:-1},{background:true}) - collection books
+// createIndex({dueDate:-1},{background:true}) - collection borrows
+
