@@ -1,0 +1,19 @@
+<table border="2px">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Visualizar</th>
+    </tr>
+    </thead>
+    <tbody> 
+        <tr *ngFor="let value of cacheData">
+            <td>{{ value.name.first+'  '+value.name.last }}</td>
+            <td>{{ value.email }}</td>
+            <td>{{ value.gender }}</td>
+            <td> <a href="/users/{{value.login.uuid}}"> Visualizar </a> </td>
+        </tr>
+    </tbody>
+
+</table>
